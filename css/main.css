@@ -204,18 +204,22 @@
   text-align: center;
 }
 
-.social-list {
+.social.list {
   display: flex;
-  justify-content: center;
-  padding: 0;
+  justify-content: space-between;
+  padding: 0 32px;
   margin-bottom: 30px;
-  list-style: none;
 }
 
 .social-links {
   display: flex;
-  background-color: rgb(66, 65, 65);
+  background-color: var(--primary-bg-color);
   border-radius: 50%;
+}
+
+.social-links:hover,
+.social-links:focus {
+  background-color: var(--accent-color);
 }
 
 .social-icon {
@@ -224,8 +228,51 @@
   fill: #afb1b8;
 }
 
-.social-items:not(:last-child) {
-  margin-right: 10px;
+.social-icon:hover,
+.social-icon:focus {
+  fill: #fff;
+}
+
+.clients .list {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 93px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
+}
+
+.clients-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-links:hover,
+.clients-links:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients.item:hover {
+  fill: var(--accent-color);
+}
+
+.clients.item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients .section-title {
+  letter-spacing: 1.08px;
 }
 
 /* =============== Portfolio.html =============== */
