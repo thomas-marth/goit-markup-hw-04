@@ -19,6 +19,19 @@
   padding-bottom: 200px;
 }
 
+.overlay {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background.jpg);
+  background-position: center;
+}
+
 .hero-title {
   color: var(--primary-bg-color);
   font-weight: 900;
@@ -26,6 +39,7 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -60,6 +74,15 @@
   cursor: pointer;
 }
 
+.hero .btn:hover {
+  display: inline-block;
+  background-color: #2481ce;
+}
+
+.hero .btn:focus {
+  outline: none;
+}
+
 /* Features */
 
 .features.list {
@@ -70,6 +93,38 @@
 
 .features .item {
   width: 270px;
+}
+
+.features .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icons/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/icons/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/icons/astronaut.svg);
+}
+
+.features .properties:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features .title {
@@ -119,12 +174,6 @@
   width: 270px;
 }
 
-.team .cards:hover {
-  box-shadow: -4px 6px 10px rgba(0, 0, 0, 0.12),
-    -4px 5px 8px rgba(0, 0, 0, 0.14), -1px 2px 3px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
 .team .cards:not(:last-child) {
   margin-right: 30px;
 }
@@ -154,8 +203,37 @@
 .team .positions {
   font-size: 16px;
   line-height: 1.19;
-  margin: 0;
+  margin-bottom: 16px;
   text-align: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 30px;
+  background-color: rgb(66, 65, 65);
+  text-decoration: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  fill: #afb1b8;
+}
+
+.social-items:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* =============== Portfolio.html =============== */
