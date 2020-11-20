@@ -170,31 +170,27 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
   width: 270px;
+  padding: 0;
 }
 
 .team .cards:not(:last-child) {
   margin-right: 30px;
 }
 
-.team .img {
-  display: block;
-}
-
 .team.list {
   display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;
-  flex-wrap: wrap;
+}
+
+.team-image {
+  display: flex;
 }
 
 .team .title {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.17;
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
@@ -203,6 +199,7 @@
 .team .positions {
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 0;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -211,23 +208,19 @@
   display: flex;
   justify-content: center;
   padding: 0;
+  margin-bottom: 30px;
   list-style: none;
 }
 
 .social-links {
   display: flex;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 30px;
   background-color: rgb(66, 65, 65);
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   fill: #afb1b8;
 }
 
