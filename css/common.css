@@ -138,7 +138,10 @@ button {
 }
 
 .page-header {
+  background-color: var(--primary-bg-color);
   border-bottom: 1px solid #ececec;
+  position: sticky;
+  top: 0;
 }
 
 /* ================= Footer ================= */
