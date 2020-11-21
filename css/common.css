@@ -185,9 +185,6 @@ footer .container {
   margin-right: 70px;
 }
 
-.social-wrapper {
-}
-
 .foter-cta {
   font-weight: 700;
   font-size: 14px;
@@ -215,9 +212,6 @@ footer .container {
 .footer-social-links:hover,
 .social-links:focus {
   background-color: var(--accent-color);
-}
-
-.footer-social-items {
 }
 
 .footer-social-items:not(:last-child) {
